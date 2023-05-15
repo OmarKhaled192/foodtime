@@ -86,7 +86,7 @@ html {
 #sec-1 nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   padding: 10px;
 }
 
@@ -125,6 +125,11 @@ html {
 }
 
 #sec-1 nav .links {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 35px;
+  padding-right: 48px;
   display: none;
 }
 
@@ -170,7 +175,7 @@ html {
 }
 
 #sec-1 section .left {
-  flex-basis: 49.5%;
+  flex-basis: 48%;
   position: relative;
 }
 
@@ -209,7 +214,7 @@ html {
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
-  width: 420px;
+  width: 350px;
   height: 47px;
   margin-top: 20px;
   margin-left: auto;
@@ -242,11 +247,13 @@ html {
   align-self: center;
   margin-top: 40px;
   height: 47px;
+  font-size: 15px;
+  line-height: 1.5;
   border-radius: 180px;
 }
 
 #sec-1 section .right {
-  flex-basis: 49.5%;
+  flex-basis: 48%;
   position: relative;
   padding-top: 50px;
 }
@@ -304,7 +311,10 @@ html {
   }
 
   #sec-1 nav .links {
-    display: block !important;
+    display: flex !important;
+    flex-direction: row;
+    padding-top: 0px;
+    padding-right: 0px;
   }
 
   #sec-1 nav .links>* {
@@ -643,12 +653,10 @@ html {
 #sec-6 .container>section:first-child>p:first-child {
   color: var(--main-color);
   font-weight: bold;
-  font-size: 30px;
+  font-size: 24px;
+  padding-bottom: 10px;
 }
 
-#sec-6 .container>section:first-child>p:nth-child(2) {
-  width: 400px;
-}
 
 #sec-6 .container .cards {
   display: flex;
@@ -694,8 +702,16 @@ html {
     flex-direction: row;
   }
 
+  #sec-6 .container>section:first-child>p:nth-child(2) {
+    width: 400px;
+  }
+
   #sec-6 .container>section:first-child {
     width: 30%;
+  }
+
+  #sec-6 .container>section:first-child>p:first-child {
+    font-size: 30px;
   }
 
   #sec-6 .container>section:last-child {
@@ -758,13 +774,17 @@ footer .above .first h2::after {
   border-right-color: transparent;
   width: 10px;
   height: 12px;
-  top: -10px;
+  top: 4px;
   transform: rotate(-10deg);
 }
 
 
 footer .above .remain {
   flex-basis: 18%;
+}
+
+footer .above .remain p {
+  padding-top: 8px;
 }
 
 footer .above .remain p a {
@@ -794,6 +814,9 @@ footer .above+p {
     padding-bottom: 10px;
     padding-top: 10px;
   }
+    footer .above .first h2::after { 
+      top: -10px;
+    }
 }
 
 /* end footer */
