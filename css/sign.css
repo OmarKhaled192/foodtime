@@ -1,0 +1,88 @@
+:root {
+  --main-color: #396c03
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline-style: none;
+  text-decoration: none;
+    font-family: 'Merienda', cursive;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 10px 30px;
+  border-radius: 20px;
+  outline: none;
+  border: 1px solid var(--main-color);
+  cursor: pointer;
+  font-weight: bold;
+  background-color: white;
+  color: var(--main-color);
+}
+
+.btn:hover {
+  background-color: var(--main-color);
+  color: white;
+}
+
+body {
+  background-image: url('../images/HomeBack.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+}
+
+h1 {
+  font-family: 'Merienda', cursive;
+  color: var(--main-color);
+  text-align: center;
+  padding-top: 40px;
+}
+
+.login-form {
+  width: 300px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #fafafa;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+.login-form .sign-up {
+  display: flex;
+  justify-content: center;
+}
+
+.login-form h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: var(--main-color);
+  font-family: 'Merienda', cursive;
+}
+
+.login-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form form + button {
+  margin-left: auto;
+  margin-right: auto;
+}
+.login-form .form-group {
+  margin-bottom: 20px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"],
+.login-form input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background: #f5f5f5;
+}
