@@ -100,6 +100,20 @@ html {
   font-size: 20px;
   font-family: 'Merienda', cursive;
   line-height: 2;
+  position: relative;
+}
+
+#sec-1 nav .logo::after {
+  content: " ";
+  position: absolute;
+  border: 4px solid #ff8b00;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  width: 10px;
+  height: 12px;
+  top: -10px;
+  right: -25px;
+  transform: rotate(-10deg);
 }
 
 #sec-1 nav .links>* {
@@ -448,9 +462,11 @@ html {
   text-align: center;
   cursor: pointer;
 }
+
 #sec-3 .cards .card:hover {
   background-color: #f5f8f2;
 }
+
 #sec-3 .cards .card h3,
 #sec-3 .cards .card p {
   padding-top: 10px;
@@ -474,9 +490,10 @@ html {
     padding: 30px;
     border-radius: 20px;
   }
-    #sec-3 .cards .card:not(:last-child) {
-      margin-right: 100px;
-    }
+
+  #sec-3 .cards .card:not(:last-child) {
+    margin-right: 100px;
+  }
 }
 
 /* end section 3 */
@@ -653,10 +670,12 @@ html {
   border-radius: 20px;
   cursor: pointer;
 }
+
 #sec-6 .container .cards .card:hover {
   background-color: #333;
   color: #ddd;
 }
+
 #sec-6 .container .cards .card img {
   width: 35px;
   padding-right: 10px;
@@ -728,7 +747,21 @@ footer .above .first {
 
 footer .above .first h2 {
   font-family: 'Merienda', cursive;
+  position: relative;
 }
+
+footer .above .first h2::after {
+  content: " ";
+  position: absolute;
+  border: 4px solid #ff8b00;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  width: 10px;
+  height: 12px;
+  top: -10px;
+  transform: rotate(-10deg);
+}
+
 
 footer .above .remain {
   flex-basis: 18%;
