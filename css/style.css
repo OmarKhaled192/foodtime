@@ -555,6 +555,20 @@ html {
 #sec-4 .container .btn {
   background-color: #fd981d;
 }
+#sec-4 .container > p {
+  margin-top: 20px;
+  padding: 20px 10px;
+  border-radius: 20px;
+  color: #000;
+  background-color: #f5f5f5;
+  display: none;
+}
+#sec-4 .container .btn i {
+  padding-left: 10px;
+}
+#sec-4 .container .btn i:last-child {
+  display: none;
+}
 
 /* end section 4 */
 /* start section 5 */
