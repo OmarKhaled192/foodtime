@@ -171,7 +171,7 @@ html {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  padding-bottom: 500px;
+  padding-bottom: 430px;
 }
 
 #sec-1 section .left {
@@ -262,13 +262,13 @@ html {
   position: absolute;
   right: 17px;
   top: 100px;
-  width: 400px;
+  width: 356px;
   z-index: 0;
 }
 
 #sec-1 section .right>img:nth-child(2) {
   position: absolute;
-  width: 200px;
+  width: 184px;
   right: -7px;
   z-index: -1;
 }
@@ -306,6 +306,10 @@ html {
 
 /* responsive  */
 @media (min-width: 992px) {
+  #sec-1 section {
+    padding-bottom: 500px;
+  }
+
   #sec-1 nav .toggle-menu {
     display: none;
   }
@@ -340,6 +344,14 @@ html {
     width: 200px;
     top: -2%;
     left: -24%;
+  }
+
+  #sec-1 section .right>img:first-child {
+    width: 400px;
+  }
+
+  #sec-1 section .right>img:nth-child(2) {
+    width: 200px;
   }
 
   #sec-1 section .left>p:first-of-type {
@@ -423,16 +435,19 @@ html {
 
 #sec-2 .right .back {
   width: 100%;
-  height: 500px;
+  height: 200px;
   margin: 0 auto;
-  background-image: url('../images/backOfImage3.png');
+  background-image: url(../images/backOfImage3.png);
   background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
   z-index: -1;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+
 
 #sec-2 .right .back .front img {
   width: 100%;
@@ -507,6 +522,10 @@ html {
 
   #sec-3 .cards .card:not(:last-child) {
     margin-right: 100px;
+  }
+
+  #sec-2 .right .back {
+    height: 500px;
   }
 }
 
