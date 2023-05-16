@@ -247,8 +247,8 @@ html {
   align-self: center;
   margin-top: 40px;
   height: 47px;
-  font-size: 15px;
-  line-height: 1.5;
+  font-size: 13px;
+  line-height: 1.6;
   border-radius: 180px;
 }
 
@@ -352,6 +352,10 @@ html {
     width: 500px;
     margin-left: -26px;
     margin-right: 0;
+  }
+
+  #sec-1 section .left .input-location .btn {
+    font-size: 16px;
   }
 
   #sec-1 section .left>p:nth-of-type(2) {
@@ -814,9 +818,10 @@ footer .above+p {
     padding-bottom: 10px;
     padding-top: 10px;
   }
-    footer .above .first h2::after { 
-      top: -10px;
-    }
+
+  footer .above .first h2::after {
+    top: -10px;
+  }
 }
 
 /* end footer */
